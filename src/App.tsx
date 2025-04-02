@@ -75,7 +75,7 @@ const App = () => {
       <ol>
         {holidays.map((holiday: Holiday) => {
           return (
-            <li key={holiday.name[0].text}>
+            <li key={holiday.name[0].text} style={{ display: 'flex' }}>
               {holiday.startDate} - {holiday.name[0].text}
             </li>
           );
